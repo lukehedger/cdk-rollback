@@ -1,5 +1,5 @@
 {
-  "name": "cdk-init",
+  "name": "cdk-rollback",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -21,6 +21,9 @@
     "typescript": "3.9.5"
   },
   "dependencies": {
+    "@aws-cdk/aws-cloudwatch": "1.45.0",
+    "@aws-cdk/aws-codedeploy": "1.45.0",
+    "@aws-cdk/aws-lambda": "1.45.0",
     "@aws-cdk/core": "1.45.0"
   }
 }

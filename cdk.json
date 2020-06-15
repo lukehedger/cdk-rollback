@@ -1,4 +1,4 @@
 {
-  "app": "node bin/cdk-init.js",
+  "app": "node bin/cdk-rollback.js",
   "versionReporting": false
 }

@@ -1,17 +1,17 @@
 import "@aws-cdk/assert/jest";
 import { App } from "@aws-cdk/core";
-import { CdkInitStack } from "../cdk-init-stack";
+import { CdkRollbackStack } from "../cdk-rollback-stack";
 
-let stack: CdkInitStack;
+let stack: CdkRollbackStack;
 
 beforeAll(() => {
   const app = new App();
 
-  stack = new CdkInitStack(app, "CdkInitStack");
+  stack = new CdkRollbackStack(app, "CdkRollbackStack");
 });
 
 test("Stack has no resources", () => {
   expect(stack).toMatchTemplate({
-    Resources: {}
+    Resources: {},
   });
 });
